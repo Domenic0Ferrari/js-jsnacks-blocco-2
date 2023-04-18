@@ -6,7 +6,7 @@ Fai la somma di tutti gli elementi che sono in posizione dispari
 
 // creare un arrey con numeri interi
 
-let number = [
+const number = [
     3,
     8,
     89,
@@ -19,6 +19,14 @@ let number = [
     1
 ]
 
-for(number=1; number < number.length; number + 2){
-    console.log(number);
+let sum = 0; //assegnare valore 0 alla variabile somma
+
+
+// sommare i dispari
+for(let i = 0; i < number.length; i++){
+    if (i % 2 !== 0){ //se un numero diviso 2 da resto diverso da zero, ALLORA va sommato
+        sum += number[i];
+    }
 }
+
+console.log(sum)
