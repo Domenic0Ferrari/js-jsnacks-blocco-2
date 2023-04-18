@@ -9,12 +9,10 @@ Se è dispari inseriscilo nell’array.
 let oddNumber = [];
 
 // chiedo all'utente di inserire 6 numeri diversi
-for (i=0; i<6; i++){
+for (let i=0; i<6; i++){
     let userNumber = parseInt(prompt("Inserisci un numero"))
 
-    if (userNumber%2 == 0){
-        console.log("numero pari")
-    } else {
+    if (userNumber % 2 !== 0){ //verifica se il numero è dispari
         oddNumber.push(userNumber);
     }
 }
