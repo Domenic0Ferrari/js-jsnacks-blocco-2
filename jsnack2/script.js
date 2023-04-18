@@ -6,9 +6,9 @@ Da queste vuole generare una falsa lista di invitati con nome e cognome.
 */
 
 // fare le due liste (nomi) e (cognomi)
-// prendere un elmento a caso dalla lista uno e aggiungere un elemento a caso dalla lista due
 
-let name = [
+
+let nome = [
     "Antonio",
     "Gianluca",
     "Enrico",
@@ -26,13 +26,14 @@ let surname = [
     "Barbati"
 ];
 
-for (i=0; i < name.length; i++){
-    console.log(name[i]);
+// prendere elementi a caso dalla lista uno e due e sommarli
+
+for (i=0; i < 10; i++){
+    let nomeRandom = Math.floor(Math.random()*nome.length);
+    let cognomeRandom = Math.floor(Math.random()*surname.length);
+    console.log(nome[nomeRandom] + surname[cognomeRandom]);
 }
 
-for (i=0; i < surname.length; i++){
-    console.log(surname[i]);
-}
 
-console.log(name[i] + surname[i]);
+
 
