@@ -26,14 +26,21 @@ let surname = [
     "Barbati"
 ];
 
+// Creare una lista vuota per inserire i nomi generati
+
+let nomiCasuali = []
+
 // prendere elementi a caso dalla lista uno e due e sommarli
 
-for (i=0; i < 10; i++){
-    let nomeRandom = Math.floor(Math.random()*nome.length);
-    let cognomeRandom = Math.floor(Math.random()*surname.length);
-    console.log(nome[nomeRandom] + surname[cognomeRandom]);
+for (let i=0; i < 10; i++){
+    let nomeRandom = nome[Math.floor(Math.random()*nome.length)];
+    let cognomeRandom = surname[Math.floor(Math.random()*surname.length)];
+    nomiCasuali.push(nomeRandom + " " + cognomeRandom);
 }
 
+// fare console per visualizzarli
+
+console.log(nomiCasuali);
 
 
 
